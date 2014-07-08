@@ -16,6 +16,9 @@ $(document).on('ready', function() {
 				// background: #00FF00,
 				// // fontSize: 100,
 				// }) 
+			$(quoteBox).css({
+				backgroundColor: white,
+			})
 
 
 
@@ -26,6 +29,9 @@ $(document).on('ready', function() {
 		$(this).closest('.quotebody').remove()
 		console.log('delete button')
 	});
+
+
+// for the Stars make a ul li list see http://rating-widget.com/get/rating/blogger/
 
 
 
