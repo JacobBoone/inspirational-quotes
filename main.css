@@ -1,0 +1,59 @@
+body {
+	font-family: fantasy;
+	margin-right: 50px;
+	margin-left: 50px;
+	background-color: #D8D8D8;
+}
+
+
+.container{
+	background-color: #F0F0F0;
+	height: 100%;
+	/*position: absolute;*/
+}
+
+.headerbox{
+	text-align: center;
+	background-color: skyblue;
+	/*height: 80px;*/
+	/*font-family: fantasy;*/
+
+}
+
+
+#inputfield{
+
+
+border: black 1px solid;
+font: 18px arial,sans-serif;
+/*left: 25px;*/
+margin-left: 50px;
+margin-top: 20px;
+/*text-align: center;*/
+position: relative;
+width: 70%;
+height: 50px;
+/*z-index: 1;*/
+}
+
+.contributor{
+	border: black 1px solid;
+	margin-left: 500px;
+	/*text-align: right;*/
+	margin-top: 5px;
+	position: relative;
+
+}
+
+.sub-button{
+	position: relative;
+}
+
+.inputbox{
+	background-color: white;
+	width: 80%;
+	/*padding-bottom: 50px;*/
+	position: relative; 
+	margin: 60px;
+	height: 120px;
+}
