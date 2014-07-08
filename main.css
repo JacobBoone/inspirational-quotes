@@ -1,7 +1,7 @@
 body {
 	font-family: fantasy;
-	margin-right: 50px;
-	margin-left: 50px;
+	margin-right: 4%;
+	margin-left: 4%;
 	background-color: #D8D8D8;
 }
 
@@ -11,42 +11,69 @@ body {
 	height: 100%;
 	/*position: absolute;*/
 }
+.heading{
+	padding-top: 10px;
+	margin: 0;
+	font-size: 60px;
 
+}
+.bottom{
+	/*padding-bott om: 50px;*/
+	/*margin-bottom: 100px;*/
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	/*width: 10px;*/
+
+}
+
+.adventuretime{
+	width: 40%;
+	height: 25%;
+}
 .headerbox{
 	text-align: center;
 	background-color: skyblue;
 	/*height: 80px;*/
 	/*font-family: fantasy;*/
+	/*position: absolute;*/
 
 }
 
 
 #inputfield{
-
-
 border: black 1px solid;
-font: 18px arial,sans-serif;
 /*left: 25px;*/
-margin-left: 50px;
-margin-top: 20px;
+margin-left: 6%;
+margin-top: 2%;
 /*text-align: center;*/
 position: relative;
 width: 70%;
-height: 50px;
+height: 40%;
 /*z-index: 1;*/
+font-size: 13px;
+text-align: top;
 }
 
-.contributor{
+.author{
 	border: black 1px solid;
-	margin-left: 500px;
+	/*margin-left: 500px;*/
+	margin-left: 55%;
 	/*text-align: right;*/
-	margin-top: 5px;
+	margin-top: 1.5%;
 	position: relative;
+	width: 15%;
+	font-size: 13px;
 
 }
+
+
 
 .sub-button{
 	position: relative;
+	border-radius: 25px;
+	background-image: url("http://image.shutterstock.com/display_pic_with_logo/842287/115487998/stock-photo-metallic-blue-background-foil-paper-illustration-for-christmas-background-wrapping-paper-design-or-115487998.jpg");
+	outline: none;
 }
 
 .inputbox{
@@ -54,6 +81,13 @@ height: 50px;
 	width: 80%;
 	/*padding-bottom: 50px;*/
 	position: relative; 
-	margin: 60px;
+	margin: 6%;
 	height: 120px;
+
+}
+
+
+.deletequote{
+	outline: none;
+	background-image: url("http://image.shutterstock.com/display_pic_with_logo/842287/115487998/stock-photo-metallic-blue-background-foil-paper-illustration-for-christmas-background-wrapping-paper-design-or-115487998.jpg");
 }
