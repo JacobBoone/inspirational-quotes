@@ -6,6 +6,9 @@ $(document).on('ready', function() {
 		var quoteText = $('#inputfield').val();
 		var	authorText = $('.author').val();
 		var quoteBox = $('<div class="quotebody"><p class="a-quote">Quote: ' + quoteText + '</p><p class="an-author">Character: '+ authorText +'</p><button class="deletequote">Delete</button><div class="rating"></div></div>');
+		// input a hover function then display the delete button
+
+
 
 		$('.inputbox').after(quoteBox)
 		console.log(quoteText,"-", authorText)
