@@ -50,7 +50,7 @@ body {
 
 }
 
-
+/*this is the Entry section*/
 #inputfield{
 border: black 1px solid;
 /*left: 25px;*/
@@ -84,6 +84,7 @@ text-align: top;
 	border-radius: 25px;
 	background-image: url("http://image.shutterstock.com/display_pic_with_logo/842287/115487998/stock-photo-metallic-blue-background-foil-paper-illustration-for-christmas-background-wrapping-paper-design-or-115487998.jpg");
 	outline: none;
+	height: 30px;
 }
 
 .inputbox{
@@ -98,23 +99,45 @@ text-align: top;
 }
 
 
+/*This is the quote section*/
+
 .deletequote{
 	outline: none;
 	background-image: url("http://image.shutterstock.com/display_pic_with_logo/842287/115487998/stock-photo-metallic-blue-background-foil-paper-illustration-for-christmas-background-wrapping-paper-design-or-115487998.jpg");
-	/*text-align: right;*/
+	/*float: top;*/
+	border-radius: 25px;
+	outline: none;
+	height: 30px;
+	display: block;
+	/*margin-left: 5px;*/
 }
 .quotebody{
 	background-color: white;
 	opacity: 0.7;
-/*	width: 80%;*/
+	margin-bottom: 10px;
 
 }
 
+.textbody {
+	width: 70%;
+	display: inline-block;
+	/*margin: 0;*/
+}
+.itembody{
+	width: 29%;
+	display: inline-block;
+}
 
-/*STAR RATING>>  ___________________*/
+
+/*----------------------       STAR RATING>>  --------------------------*/
 .rating {
-    float:right;
-    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    float:left;
+    background-color: white;
+	opacity: 0.8;
+	/*z-index: 1;*/
+    /*margin-bottom: 10px;*/
 }
 
 /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
@@ -122,7 +145,7 @@ text-align: top;
    it doesn’t make the test unnecessarily selective */
 .rating:not(:checked) > input {
     position:absolute;
-    top:-9999px;
+    /*top:-9999px;*/
     clip:rect(0,0,0,0);
 }
 
@@ -133,7 +156,7 @@ text-align: top;
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-    font-size:200%;
+    font-size:150%;
     line-height:1.2;
     color:#ddd;
     text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
@@ -143,28 +166,29 @@ text-align: top;
     content: '★ ';
 }
 
+/*maintains the color of the stars when clicked*/
 .rating > input:checked ~ label {
     color: #f70;
     text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
 }
 
-.rating:not(:checked) > label:hover,
+/*.rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
     color: gold;
     text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
 }
-
-.rating > input:checked + label:hover,
+*/
+/*.rating > input:checked + label:hover,
 .rating > input:checked + label:hover ~ label,
 .rating > input:checked ~ label:hover,
 .rating > input:checked ~ label:hover ~ label,
 .rating > label:hover ~ input:checked ~ label {
     color: #ea0;
     text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
-}
+}*/
 
-.rating > label:active {
+/*.rating > label:active {
     position:relative;
     top:2px;
     left:2px;
-}
+}*/
