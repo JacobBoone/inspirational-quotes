@@ -2,6 +2,8 @@
 // when var's are outside of function, only 1 quote is added. WHY?? when inside it is unlimited.
 var undoButton = $('<button class="undoDelete" ><img src="http://a.deviantart.net/avatars/s/i/sillyicekingplz.gif?1"></button>')
 
+// var undid = $('')
+// var deletedQuote = $(undid)
 
 	$(document).on('click', '.sub-button', function(){
 		var quoteText = $('#inputfield').val();
@@ -34,18 +36,29 @@ var undoButton = $('<button class="undoDelete" ><img src="http://a.deviantart.ne
 
 // Quote is deleted when i click the Delete button
 		$(document).on('click', '.deletequote', function(){
-			$(this).closest('.quotebody').remove()
+			// var accesses the closest qoutebody
+			var storeQuote = $(this).closest('.quotebody')
+
+			// this hides the var storeQuote
+			storeQuote.hide()
 			console.log('delete button')
+			// this adds an undo button when delete is clicked
 			$('.inputbox').append(undoButton)
+	   
+
+			// quote reappears when undo button is clicked
+			$(document).on('click', '.undoDelete', function(){
+				// this actually reshows ALL deleted items, not just the last one
+				storeQuote.show().last()
+				
+				$('.inputbox').after(storeQuote)
+
+				console.log('undo')
+			});
+
 	    });
 
 
-// qoute reappears when undo button is clicked
-		$(document).on('click', '.undoDelete', function(){
-			
-
-			console.log('undo')
-		});
 
 // for the Stars make a ul li list see http://rating-widget.com/get/rating/blogger/
 
