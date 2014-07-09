@@ -3,7 +3,12 @@ body {
 	margin-right: 4%;
 	margin-left: 4%;
 	/*background-color: #D8D8D8;*/
-	background: url("http://img2.wikia.nocookie.net/__cb20120709215129/adventuretimewithfinnandjake/images/9/90/New_Map_of_Ooo.jpg");
+	background: url("http://img2.wikia.nocookie.net/__cb20120709215129/adventuretimewithfinnandjake/images/9/90/New_Map_of_Ooo.jpg")/* no-repeat center center fixed*/;
+	/*background: url("http://i.imgur.com/2oHcKaS.jpg") no-repeat center center fixed;*/
+	/*background-repeat: repeat;*/
+	/*background-attachment: scroll;*/
+	/*background-position: 0% 0%;*/
+	/*width: 100%;*/
 }
 
 
@@ -101,6 +106,7 @@ text-align: top;
 .quotebody{
 	background-color: white;
 	opacity: 0.7;
+/*	width: 80%;*/
 
 }
 
