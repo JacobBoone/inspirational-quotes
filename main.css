@@ -111,7 +111,7 @@ text-align: top;
 	display: block;
 	/*margin-left: 5px;*/
 }
-.quotebody{
+.quotebody, .lightbox{
 	background-color: white;
 	opacity: 0.7;
 	margin-bottom: 10px;

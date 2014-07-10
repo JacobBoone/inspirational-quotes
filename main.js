@@ -35,7 +35,7 @@
 var undoButton = $('<button class="undoDelete" ><img src="http://a.deviantart.net/avatars/s/i/sillyicekingplz.gif?1"></button>')
 var	randomButton = $('<button class="randomQuote"><img src="http://fc02.deviantart.net/fs70/f/2011/220/a/1/poo_brain_horse_icon_by_supajackle-d45x9b2.gif"></button>')
 var arrQuotes = []
-
+var	randomQuotes =[]
 
 
 $('.inputbox').append(randomButton)
@@ -62,14 +62,14 @@ $('.inputbox').append(randomButton)
 
 // Quote appears when i click the Submit Button
 
-		$(quoteBox).append(textBox, itemBox)
-		$(textBox).append(theQuote, theAuthor)
-		$(itemBox).append(ratingBar, deleteButton)
+		quoteBox.append(textBox, itemBox)
+		textBox.append(theQuote, theAuthor)
+		itemBox.append(ratingBar, deleteButton)
 
 
 		
 		$('.inputbox').after(quoteBox)
-		$(arrQuotes).push(quoteBox)
+		randomQuotes.push(quoteBox.clone())
 			console.log(quoteText,"-", authorText)
 		
 
@@ -82,31 +82,40 @@ $('.inputbox').append(randomButton)
 
 			// this hides the var storeQuote
 			storeQuote.hide()
-			console.log('delete button')
+			arrQuotes.push(storeQuote)
+			console.log(storeQuote)
 			// this adds an undo button when delete is clicked
 			$('.inputbox').append(undoButton)
 	   
 
-// Quote reappears when undo button is clicked
-			$(document).on('click', '.undoDelete', function(){
-				// this actually reshows ALL deleted items, not just the last one
-				storeQuote.show()
-				$('.inputbox').after(storeQuote)
 
-				console.log('undo')
-			});
 
 	    });
 
-
+// Quote reappears when undo button is clicked
+			$(document).on('click', '.undoDelete', function(){
+				var showMe = arrQuotes.splice(arrQuotes.length-1, 1)
+				showMe[0].show()
+				console.log('undo')
+			});
 
 // random qoute button
 			$(document).on('click', '.randomQuote', function(){
-				
-				alert(arrQuotes[2])
+				i = Math.floor(Math.random()*randomQuotes.length -1)
+//for some reason this is not always chooseing a quote in the array, and can go up to 2, and then starts replaceing them but keeps 2
+	
+					var foo = $('.inputbox').before("<div class='lightbox'></div>")
+					foo.before(randomQuotes[i])
+		
+			
+			
+
+
+
+				// alert(arrQuotes[2])
 				
 
-				console.log('undo')
+				console.log('random qoute')
 			});
 // for the Stars make a ul li list see http://rating-widget.com/get/rating/blogger/
 
